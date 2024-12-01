@@ -1,0 +1,32 @@
+version: '3'
+
+services:
+  app:
+    build: .
+    ports:
+      - "8080:80"  # Przekierowanie portu
+    volumes:
+      - ./osadnicy:/var/www/html  # Podłączenie plików aplikacji
+    depends_on:
+      - db
+    networks:
+      - app-network
+
+  db:
+    image: mariadb:latest  # Obraz MariaDB
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: tajnehaslodb  # Hasło dla użytkownika root
+      MYSQL_DATABASE: osadnicy           # Tworzenie bazy danych "osadnicy"
+    volumes:
+      - db-data:/var/lib/mysql
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql  # Automatyczne załadowanie pliku SQL
+    networks:
+      - app-network
+
+volumes:
+  db-data:
+
+networks:
+  app-network:
+

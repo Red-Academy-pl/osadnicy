@@ -1,0 +1,181 @@
+/* Ogólne ustawienia */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffffff; /* Zmieniono tło na białe */
+    color: #333333; /* Zmieniono kolor tekstu na ciemniejszy szary */
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    color: #e63946; /* Czerwony kolor tytułów */
+    margin-bottom: 20px;
+}
+
+a {
+    color: #e63946; /* Czerwony kolor linków */
+    text-decoration: none;
+}
+
+a:hover {
+    color: #f1faee; /* Zmiana koloru linków po najechaniu */
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Stylizacja dla panelu logowania */
+form {
+    background-color: #f4f4f4; /* Jasnoszary panel logowania */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1); /* Delikatny cień */
+    max-width: 400px; /* Ograniczenie szerokości panelu logowania */
+    margin: 20px auto;
+}
+
+input[type="text"], input[type="password"] {
+    padding: 10px;
+    width: 80%;
+    margin: 10px 0;
+    border: 1px solid #ccc; /* Dodano delikatne obramowanie */
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    background-color: #e63946;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #f1faee;
+    color: #e63946;
+}
+
+/* Stylizacja dashboardu */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    background-color: #f4f4f4; /* Jasne tło dla listy zasobów */
+    margin: 10px;
+    padding: 15px;
+    border-radius: 10px;
+    display: inline-block;
+    min-width: 150px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Delikatny cień dla zasobów */
+}
+
+ul li img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.resource-title {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* Formularz wyszukiwania */
+form.search-form {
+    margin-top: 20px;
+    background-color: #f4f4f4; /* Jasne tło dla formularza wyszukiwania */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"] {
+    width: 70%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+input[type="submit"] {
+    padding: 10px 15px;
+    background-color: #e63946;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #f1faee;
+    color: #e63946;
+}
+
+/* Stylizacja wylogowania */
+.logout-link {
+    margin-top: 20px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #e63946;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.logout-link:hover {
+    background-color: #f1faee;
+    color: #e63946;
+}
+
+/* Stylizacja logo */
+.logo {
+    display: block;
+    margin: 0 auto;
+    width: 150px; /* Zmniejszona szerokość logo */
+    height: auto;
+    margin-bottom: 20px;
+}
+/* Formularz wyszukiwania */
+form.search-form {
+    margin-top: 20px;
+    background-color: #f4f4f4; /* Jasne tło dla formularza wyszukiwania */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Wyśrodkowanie tekstu */
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto; /* Wycentrowanie formularza */
+}
+
+/* Stylizacja wyników wyszukiwania */
+.search-results {
+    margin-top: 20px;
+    text-align: left; /* Tabela wyników będzie wyrównana do lewej, ale w ramach okienka */
+}
+
+table {
+    width: 100%; /* Tabela dopasuje się do szerokości formularza */
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
