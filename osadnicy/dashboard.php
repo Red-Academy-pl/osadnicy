@@ -75,9 +75,9 @@ $resources = [
 
             // Sprawdzanie, czy szukany surowiec istnieje w zasobach użytkownika
             if (array_key_exists($searchedResource, $resources)) {
-                echo "<p>Szukany surowiec: <strong>" . htmlspecialchars($searchedResource) . "</strong>, ilość: " . $resources[$searchedResource] . "</p>";
+                echo "<p>Szukany surowiec: <strong>" . $searchedResource . "</strong>, ilość: " . $resources[$searchedResource] . "</p>";
             } else {
-                echo "<p>Szukany surowiec: <strong>" . htmlspecialchars($searchedResource) . "</strong> nie został znaleziony.</p>";
+                echo "<p>Szukany surowiec: <strong>" . $searchedResource . "</strong> nie został znaleziony.</p>";
             }
         }
         ?>
